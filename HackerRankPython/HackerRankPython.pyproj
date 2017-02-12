@@ -23,6 +23,26 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="HackerRankPython.py" />
+    <Compile Include="sherlockPairs\Solution.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="sherlockPairs\__init__.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="utils\strings\Strings.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="utils\strings\__init__.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="utils\__init__.py">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="sherlockPairs\" />
+    <Folder Include="utils\" />
+    <Folder Include="utils\strings\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

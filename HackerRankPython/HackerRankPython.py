@@ -1,30 +1,25 @@
-import sys
+import      sys
+
+from        sherlockPairs.Solution      import  SherlockPairs
+from        utils.strings.Strings       import  format              as      _fmt
 
 
-def                                     _fmt                        (fmt, *args)                    :
-    return fmt.format(*args);
     
-def                                     getPairs                    (a)                             :
-    sum = 0
-    sz  = len(a)
-    i =1
-    while (i < sz):
-        c   = 1
-        while (i < sz and a[i] == a[i-1]):
-            c+=1
-            i+=1
-        sum += (c * (c - 1))
-        i+=1
-    return sum
-    
+def                                     doTest                      (input)                         :
+    obj = SherlockPairs()
+    obj.Solution(input)
+     
+
+# interactive
 try:
-    nT=int(raw_input())
-    for tn in range(nT):
-        N=int(raw_input())
-        A=[int(x) for x in raw_input().split(' ')]
-        A=sorted(A)
-        r=getPairs(A)
-        print r
+    input=''
+    done=False
+    while (not done):
+        line=raw_input()
+        if (line == '\4'):                                                                          #   EOT (ctrl+D)
+            break
+        input+=line+"\n"
+    doTest ( input )
 
 except ValueError as e:
     print _fmt("Error: {}",e.message)
