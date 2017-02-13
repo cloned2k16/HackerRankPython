@@ -1,7 +1,8 @@
-class                                   SherlockPairs               (object)                        :
+from  SolutionBase import SolutionBase
+
+class                                   SherlockPairs               (SolutionBase)                  :
 
     """just an HackerRank Solution"""
-
 
     def                                 getPairs                    (th, a)                         :
         sum = 0

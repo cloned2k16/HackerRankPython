@@ -29,6 +29,15 @@
     <Compile Include="sherlockPairs\__init__.py">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="sherlockPermutations\Solution.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="sherlockPermutations\__init__.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SolutionBase.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="utils\strings\Strings.py">
       <SubType>Code</SubType>
     </Compile>
@@ -41,8 +50,15 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="sherlockPairs\" />
+    <Folder Include="sherlockPermutations\" />
     <Folder Include="utils\" />
     <Folder Include="utils\strings\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="sherlockPairs\input00.txt" />
+    <Content Include="sherlockPairs\input03.txt" />
+    <Content Include="sherlockPairs\output00.txt" />
+    <Content Include="sherlockPairs\output03.txt" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
